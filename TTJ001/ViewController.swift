@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfLat: UITextField!
     @IBOutlet weak var tfInfo: UITextField!
     @IBOutlet weak var tfRemoveJail: UITextField!
-    
     @IBOutlet weak var mapView: MKMapView!
     var annotation:MKPointAnnotation!
     
