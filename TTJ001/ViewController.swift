@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  TTJ001
-//  Did you get this?
+//  Did you get this? yes
 //  Created by Rodney Hermes on 2/17/21.
 
 import UIKit
