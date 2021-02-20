@@ -3,7 +3,6 @@
 //  TTJ001
 //
 //  Created by Rodney Hermes on 2/17/21.
-//  Test 2
 
 import UIKit
 
