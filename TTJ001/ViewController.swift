@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  TTJ001
-//  Rodney made a change
+//  
 //  Created by Rodney Hermes on 2/17/21.
 
 import UIKit
