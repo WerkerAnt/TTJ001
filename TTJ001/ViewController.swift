@@ -29,8 +29,7 @@ class ViewController: UIViewController {
         print("Jail Loaded!")
     }
     
-    
-    @IBAction func tfSubmit(_ sender: Any) {
+    @IBAction func btnSubmit(_ sender: Any) {
         let newJail = Jail(context: self.context)
         newJail.town = tfTown.text
         newJail.material = tfMaterial.text
@@ -50,6 +49,7 @@ class ViewController: UIViewController {
         
         
     }
+    
     
     @IBAction func btnPrint(_ sender: Any) {
         self.fetchJail()
