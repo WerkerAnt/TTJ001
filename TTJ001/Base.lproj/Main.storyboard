@@ -220,13 +220,18 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="9fc-bl-bQf" id="Aby-25-bza"/>
-                        <outlet property="nameLabel" destination="DMh-pt-1a9" id="y8Q-nq-mTk"/>
                         <outlet property="tfCounty" destination="FiQ-Oc-r8k" id="SjZ-HP-gLX"/>
+                        <outlet property="tfDate" destination="8E5-kZ-n5J" id="WhF-Yh-X89"/>
                         <outlet property="tfInfo" destination="f0I-h6-0pf" id="YEm-j7-heF"/>
+                        <outlet property="tfJid" destination="bKc-bk-tAT" id="dZi-1a-k2P"/>
                         <outlet property="tfLat" destination="aMx-TJ-A9S" id="EcQ-ts-SNn"/>
                         <outlet property="tfLong" destination="BKP-8g-yKa" id="MbM-fL-cyS"/>
                         <outlet property="tfMaterial" destination="LVs-LA-Yno" id="Hqw-EL-TBo"/>
+                        <outlet property="tfPhoto1" destination="nRi-oS-qBA" id="YBK-cP-xfm"/>
+                        <outlet property="tfPhoto2" destination="cGi-at-2od" id="pN4-cf-aff"/>
+                        <outlet property="tfPhoto3" destination="Owt-wF-Uur" id="MBX-JZ-pvj"/>
                         <outlet property="tfRemoveJail" destination="87d-Bj-WRL" id="6v8-vo-wwo"/>
+                        <outlet property="tfSqft" destination="HQ9-oy-qVc" id="rv0-zQ-KbS"/>
                         <outlet property="tfTown" destination="k0Z-Pg-y7k" id="nwM-2L-TKO"/>
                     </connections>
                 </viewController>

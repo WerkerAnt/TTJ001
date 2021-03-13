@@ -11,7 +11,6 @@ import CoreLocation  //enables User Location
 
 
 class ViewController: UIViewController {
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tfTown: UITextField!
     @IBOutlet weak var tfCounty: UITextField!
     @IBOutlet weak var tfMaterial: UITextField!
@@ -19,6 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfLat: UITextField!
     @IBOutlet weak var tfInfo: UITextField!
     @IBOutlet weak var tfRemoveJail: UITextField!
+    @IBOutlet weak var tfJid: UITextField!
+    @IBOutlet weak var tfSqft: UITextField!
+    @IBOutlet weak var tfPhoto3: UITextField!
+    @IBOutlet weak var tfPhoto2: UITextField!
+    @IBOutlet weak var tfPhoto1: UITextField!
+    @IBOutlet weak var tfDate: UITextField!
     @IBOutlet weak var mapView: MKMapView!
     var annotation:MKPointAnnotation!
     
@@ -34,17 +39,40 @@ class ViewController: UIViewController {
         newJail.town = tfTown.text
         newJail.material = tfMaterial.text
         newJail.county = tfCounty.text
+        newJail.info = tfInfo.text
+        newJail.photo1 = tfPhoto1.text
+        newJail.photo2 = tfPhoto2.text
+        newJail.photo3 = tfPhoto3.text
+        
+        
+        //Sqft needs to be cast as an Integer (Int64)
+        let sqft:Int64? = Int64(tfSqft.text!)
+        newJail.sqft = sqft!
+        
+        //jID needs to be cast as an Integer
+        let jId:Int64? = Int64(tfJid.text!)
+        newJail.uniqueID = jId!
+        
+        //Date needs to be cast from string to a Date data type
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy"
+        let date = dateFormatter.date(from: tfDate.text!)
+        newJail.date = date
+        
+        //Latitude and Longitude need to be cast as Doubles
         let lat:Double? = Double(tfLat.text!)
         let long:Double? = Double(tfLong.text!)
         newJail.lat = lat!
         newJail.long = long!
         
         
+        
+        
         do {
             try self.context.save()
         }
         catch {
-            nameLabel.text = "Error"
+            
         }
         
         
@@ -65,11 +93,19 @@ class ViewController: UIViewController {
         while ct < jailCt! {
             let jailLoaded = self.items![ct]
             //print(jailLoaded.town!)
+            print(jailLoaded.town!)
             print(jailLoaded.county!)
             print(jailLoaded.material!)
+            print(jailLoaded.sqft)
             print(jailLoaded.lat)
             print(jailLoaded.long)
-            print("DB Item#:  \(ct)")
+            print(jailLoaded.date)
+            print(jailLoaded.photo1!)
+            print(jailLoaded.photo2!)
+            print(jailLoaded.photo3!)
+            print(jailLoaded.info!)
+            print(jailLoaded.uniqueID)
+            print("DB Count#:  \(ct)")
             print("\n")
             ct+=1
         }

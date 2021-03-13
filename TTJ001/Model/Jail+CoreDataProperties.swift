@@ -20,12 +20,14 @@ extension Jail {
     @NSManaged public var lat: Double
     @NSManaged public var long: Double
     @NSManaged public var material: String?
-    @NSManaged public var jailNum: Int64
+    @NSManaged public var uniqueID: Int64
     @NSManaged public var photo1: String?
     @NSManaged public var photo2: String?
     @NSManaged public var photo3: String?
     @NSManaged public var town: String?
-    @NSManaged public var year: Date?
+    @NSManaged public var date: Date?
+    @NSManaged public var info: String?
+    @NSManaged public var sqft: Int64
 
 }
 
