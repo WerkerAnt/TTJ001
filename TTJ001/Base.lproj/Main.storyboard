@@ -51,7 +51,7 @@
         <!--Plan-->
         <scene sceneID="IX6-UE-Tm1">
             <objects>
-                <viewController id="S2x-lB-PF4" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="S2x-lB-PF4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lfY-Yf-7wn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@
         <!--Locate-->
         <scene sceneID="LWy-SM-pQn">
             <objects>
-                <viewController id="014-bs-HUv" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="014-bs-HUv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xLv-62-qWZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
