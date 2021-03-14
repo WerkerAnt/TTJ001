@@ -28,11 +28,12 @@ class ViewController: UIViewController {
     var annotation:MKPointAnnotation!
     
 
-    
-    @IBAction func buttonB(_ sender: UIButton) {
+
+    @IBAction func btnLocate(_ sender: Any) {
         self.getLocation()
         print("Jail Loaded!")
     }
+    
     
     @IBAction func btnSubmit(_ sender: Any) {
         let newJail = Jail(context: self.context)
@@ -65,7 +66,18 @@ class ViewController: UIViewController {
         newJail.lat = lat!
         newJail.long = long!
         
-        
+        tfTown.text = ""
+        tfCounty.text = ""
+        tfMaterial.text = ""
+        tfLat.text = ""
+        tfLong.text = ""
+        tfInfo.text = ""
+        tfDate.text = ""
+        tfPhoto1.text = ""
+        tfPhoto2.text = ""
+        tfPhoto3.text = ""
+        tfSqft.text = ""
+        tfJid.text = ""
         
         
         do {
@@ -116,7 +128,7 @@ class ViewController: UIViewController {
     @IBAction func btnDelete(_ sender: Any) {
         
         self.deleteJail()
-        
+        tfRemoveJail.text = ""
         
     }
     
