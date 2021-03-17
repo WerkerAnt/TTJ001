@@ -46,7 +46,7 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     @IBAction func sliderZoomMap(_ sender: Any) {
         
-            
+        
         
     }
     
