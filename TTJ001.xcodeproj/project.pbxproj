@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4220D05A25DF076300E81042 /* Jail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4220D05925DF076300E81042 /* Jail+CoreDataProperties.swift */; };
 		4256142725DDC7E1001E6750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4256142625DDC7E1001E6750 /* AppDelegate.swift */; };
 		4256142925DDC7E1001E6750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4256142825DDC7E1001E6750 /* SceneDelegate.swift */; };
 		4256142B25DDC7E1001E6750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4256142A25DDC7E1001E6750 /* ViewController.swift */; };
@@ -43,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4220D05925DF076300E81042 /* Jail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jail+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4256142325DDC7E1001E6750 /* TTJ001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTJ001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4256142625DDC7E1001E6750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4256142825DDC7E1001E6750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 		4256146325DDCC74001E6750 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4220D05925DF076300E81042 /* Jail+CoreDataProperties.swift */,
 				4256147725DDCF1B001E6750 /* Jail+CoreDataClass.swift */,
 				42963CE825FFDDC500F71B50 /* Town.swift */,
 				42963CF025FFDEEF00F71B50 /* TownDBModel.swift */,
@@ -308,7 +305,6 @@
 			files = (
 				42963CCA25FEC6E000F71B50 /* JailRow.swift in Sources */,
 				4256147925DDCF1B001E6750 /* Jail+CoreDataClass.swift in Sources */,
-				4220D05A25DF076300E81042 /* Jail+CoreDataProperties.swift in Sources */,
 				4256142B25DDC7E1001E6750 /* ViewController.swift in Sources */,
 				426F10FF25FEB7BD00284616 /* LocateViewController.swift in Sources */,
 				42963CE925FFDDC500F71B50 /* Town.swift in Sources */,

@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfLong: UITextField!
     @IBOutlet weak var tfLat: UITextField!
     @IBOutlet weak var tfInfo: UITextField!
+    @IBOutlet weak var tfLocalDetail: UITextField!
+    
     @IBOutlet weak var tfRemoveJail: UITextField!
     @IBOutlet weak var tfJid: UITextField!
     @IBOutlet weak var tfSqft: UITextField!
@@ -46,7 +48,7 @@ class ViewController: UIViewController {
         newJail.photo1 = tfPhoto1.text
         newJail.photo2 = tfPhoto2.text
         newJail.photo3 = tfPhoto3.text
-        
+        newJail.localDetail = tfLocalDetail.text
         
         //Sqft needs to be cast as an Integer (Int64)
         let sqft:Int64? = Int64(tfSqft.text!)
@@ -80,7 +82,7 @@ class ViewController: UIViewController {
         tfPhoto3.text = ""
         tfSqft.text = ""
         tfJid.text = ""
-        
+        tfLocalDetail.text = ""
         
         do {
             try self.context.save()
@@ -114,6 +116,7 @@ class ViewController: UIViewController {
             print(jailLoaded.lat)
             print(jailLoaded.long)
             print(jailLoaded.date)
+            print(jailLoaded.localDetail)
             print(jailLoaded.photo1!)
             print(jailLoaded.photo2!)
             print(jailLoaded.photo3!)

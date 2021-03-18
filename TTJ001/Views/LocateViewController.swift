@@ -20,12 +20,11 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Jail")
     
     var annotation:MKPointAnnotation!
-    @IBOutlet weak var labelInfo: UILabel!
     @IBOutlet weak var labelCounty: UILabel!
-    @IBOutlet weak var labelYear: UILabel!
-    @IBOutlet weak var labelMaterial: UILabel!
+    @IBOutlet weak var labelTown: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var sliderZoom: UISlider!
+    @IBOutlet weak var labelLocalDetail: UILabel!
     
     
     @IBOutlet weak var pickerTown: UIPickerView!
@@ -70,20 +69,26 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         
         let tempTown = listJails[row].value(forKey: "town") as! String
         let tempCounty = listJails[row].value(forKey: "county") as! String
-        let tempYear = listJails[row].value(forKey: "date") as! Date
         
         
-        let tempMaterial = listJails[row].value(forKey: "material") as! String
-        let tempInfo = listJails[row].value(forKey: "info") as! String
+        let tempLocalDetail = listJails[row].value(forKey: "localDetail") as! String
         
-        labelInfo.text = tempInfo
+        
         labelCounty.text = tempCounty
+        labelLocalDetail.text = tempLocalDetail
+        labelTown.text = tempTown
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        labelYear.text = dateFormatter.string(from: tempYear)
         
-        labelMaterial.text = tempMaterial
+        //DATE to STRING FORMATTING
+        //let tempYear = listJails[row].value(forKey: "date") as! Date
+        //let dateFormatter = DateFormatter()
+        //dateFormatter.dateStyle = .medium
+        //labelYear.text = dateFormatter.string(from: tempYear)
+        
+        
+        
+        
+        
         getLocation(locationNum: row)
         
         
