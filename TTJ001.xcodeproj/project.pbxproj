@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4253DC742603F18200DBE4D1 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253DC732603F18200DBE4D1 /* LearnViewController.swift */; };
 		4256142725DDC7E1001E6750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4256142625DDC7E1001E6750 /* AppDelegate.swift */; };
 		4256142925DDC7E1001E6750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4256142825DDC7E1001E6750 /* SceneDelegate.swift */; };
 		4256142B25DDC7E1001E6750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4256142A25DDC7E1001E6750 /* ViewController.swift */; };
@@ -22,6 +23,8 @@
 		42963CDB25FEF1EE00F71B50 /* JailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42963CDA25FEF1EE00F71B50 /* JailList.swift */; };
 		42963CE925FFDDC500F71B50 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42963CE825FFDDC500F71B50 /* Town.swift */; };
 		42963CF125FFDEEF00F71B50 /* TownDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42963CF025FFDEEF00F71B50 /* TownDBModel.swift */; };
+		42A28DFB260A4DBC00AC46B2 /* atx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A28DFA260A4DBB00AC46B2 /* atx.jpg */; };
+		42A28E00260A4E1E00AC46B2 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A28DFF260A4E1E00AC46B2 /* test.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4253DC732603F18200DBE4D1 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		4256142325DDC7E1001E6750 /* TTJ001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTJ001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4256142625DDC7E1001E6750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4256142825DDC7E1001E6750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		42963CDA25FEF1EE00F71B50 /* JailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailList.swift; sourceTree = "<group>"; };
 		42963CE825FFDDC500F71B50 /* Town.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
 		42963CF025FFDEEF00F71B50 /* TownDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownDBModel.swift; sourceTree = "<group>"; };
+		42A28DFA260A4DBB00AC46B2 /* atx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atx.jpg; sourceTree = "<group>"; };
+		42A28DFF260A4E1E00AC46B2 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 		42963CC525FEC63400F71B50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4253DC732603F18200DBE4D1 /* LearnViewController.swift */,
 				42963CDA25FEF1EE00F71B50 /* JailList.swift */,
 				42963CC925FEC6E000F71B50 /* JailRow.swift */,
 				426F10FE25FEB7BD00284616 /* LocateViewController.swift */,
@@ -169,6 +176,8 @@
 		42963CCE25FECFFB00F71B50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				42A28DFF260A4E1E00AC46B2 /* test.jpg */,
+				42A28DFA260A4DBB00AC46B2 /* atx.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -277,8 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4256143625DDC7E3001E6750 /* LaunchScreen.storyboard in Resources */,
+				42A28E00260A4E1E00AC46B2 /* test.jpg in Resources */,
 				4256143325DDC7E3001E6750 /* Assets.xcassets in Resources */,
 				4256142E25DDC7E1001E6750 /* Main.storyboard in Resources */,
+				42A28DFB260A4DBC00AC46B2 /* atx.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +320,7 @@
 				426F10FF25FEB7BD00284616 /* LocateViewController.swift in Sources */,
 				42963CE925FFDDC500F71B50 /* Town.swift in Sources */,
 				42963CF125FFDEEF00F71B50 /* TownDBModel.swift in Sources */,
+				4253DC742603F18200DBE4D1 /* LearnViewController.swift in Sources */,
 				4256142725DDC7E1001E6750 /* AppDelegate.swift in Sources */,
 				4256143125DDC7E1001E6750 /* TTJ001.xcdatamodeld in Sources */,
 				4256142925DDC7E1001E6750 /* SceneDelegate.swift in Sources */,

@@ -130,6 +130,12 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func btnTest(_ sender: Any) {
+        
+       print("tester button")
+    }
+    
+    
     @IBAction func btnDelete(_ sender: Any) {
         
         self.deleteJail()

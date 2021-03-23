@@ -26,6 +26,7 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var sliderZoom: UISlider!
     @IBOutlet weak var labelLocalDetail: UILabel!
     
+    @IBOutlet weak var btnTest: UIButton!
     
     @IBOutlet weak var pickerTown: UIPickerView!
     var pickerData = [["Caldwell","East Bernard","Fayetteville","Flatonia"]]
@@ -58,7 +59,7 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
            return pickerData.count
        }
        
-       
+    
        
        func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return listJails.count
@@ -67,11 +68,12 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
        //Data to return for row and component that is being passed in
        func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
+        //Pull Data for Selected town from CoreData
         let tempTown = listJails[row].value(forKey: "town") as! String
         let tempCounty = listJails[row].value(forKey: "county") as! String
-        
-        
         let tempLocalDetail = listJails[row].value(forKey: "localDetail") as! String
+        let tempInfo = listJails[row].value(forKey: "info") as! String
+        let tempPhoto1 = listJails[row].value(forKey: "photo1") as! String
         
         
         labelCounty.text = tempCounty
@@ -80,16 +82,26 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         
         
         //DATE to STRING FORMATTING
-        //let tempYear = listJails[row].value(forKey: "date") as! Date
-        //let dateFormatter = DateFormatter()
-        //dateFormatter.dateStyle = .medium
-        //labelYear.text = dateFormatter.string(from: tempYear)
+        let tempDate = listJails[row].value(forKey: "date") as! Date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        let tempDateString = dateFormatter.string(from: tempDate)
         
         
         
         
         
         getLocation(locationNum: row)
+        
+        
+        //Send data to LearnViewController
+        (self.tabBarController?.viewControllers?[2] as! LearnViewController).town = tempTown
+        (self.tabBarController?.viewControllers?[2] as! LearnViewController).county = tempCounty
+        (self.tabBarController?.viewControllers?[2] as! LearnViewController).date = tempDateString
+        (self.tabBarController?.viewControllers?[2] as! LearnViewController).info = tempInfo
+        
+        (self.tabBarController?.viewControllers?[2] as! LearnViewController).photo1 = tempPhoto1
+        
         
         
         return tempTown
