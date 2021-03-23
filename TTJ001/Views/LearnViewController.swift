@@ -45,9 +45,7 @@ class LearnViewController: UIViewController {
         
         let displayPhoto: String = photo1 + ".jpg"
         
-        
-        
-        print(displayPhoto)
+        photoJail.image = UIImage(named: displayPhoto)
     }
 
     
