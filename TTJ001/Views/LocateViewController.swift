@@ -74,7 +74,10 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let tempLocalDetail = listJails[row].value(forKey: "localDetail") as! String
         let tempInfo = listJails[row].value(forKey: "info") as! String
         let tempPhoto1 = listJails[row].value(forKey: "photo1") as! String
-        
+        let tempSqft = listJails[row].value(forKey: "sqft") as! Int64
+        let tempMaterial = listJails[row].value(forKey: "material") as! String
+        let tempLat = listJails[row].value(forKey: "lat") as! Double
+        let tempLong = listJails[row].value(forKey: "long") as! Double
         
         labelCounty.text = tempCounty
         labelLocalDetail.text = tempLocalDetail
@@ -101,8 +104,12 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         (self.tabBarController?.viewControllers?[2] as! LearnViewController).info = tempInfo
         
         (self.tabBarController?.viewControllers?[2] as! LearnViewController).photo1 = tempPhoto1
+        (self.tabBarController?.viewControllers?[2] as! LearnViewController).sqft = tempSqft
+        (self.tabBarController?.viewControllers?[2] as! LearnViewController).material = tempMaterial
         
-        
+        (self.tabBarController?.viewControllers?[1] as! PlanViewController).town = tempTown
+        (self.tabBarController?.viewControllers?[1] as! PlanViewController).lat = tempLat
+        (self.tabBarController?.viewControllers?[1] as! PlanViewController).long = tempLong
         
         return tempTown
         
@@ -137,7 +144,7 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         
     }
         
-       
+    
        
 }
     

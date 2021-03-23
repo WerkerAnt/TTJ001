@@ -150,28 +150,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*self.fetchJail()
-        var ct = 0
-        let jailCt = items?.count
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
         
-        while ct < jailCt! {
-            let jailLoaded = self.items![ct]
-            //print(jailLoaded.town!)
-            print(jailLoaded.county!)
-            print(jailLoaded.material!)
-            print("DB Item#:  \(ct)")
-            print("\n")
-            ct+=1
-        }
-        */
-    
-        //let jailLoaded = self.items![3]
-        //nameLabel.text = jailLoaded.name
+        let paths = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        print(documentsDirectory)
         
-        
-        // Do any additional setup after loading the view.
-        
-    
     }
     
     func fetchJail() {
@@ -225,6 +210,8 @@ class ViewController: UIViewController {
         mapView.addAnnotation(annotation)
         
     }
+    
+    
 
 
 }

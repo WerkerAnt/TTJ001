@@ -20,6 +20,8 @@ class LearnViewController: UIViewController {
     var date: String = ""
     var info: String = ""
     var photo1: String = ""
+    var sqft: Int64 = 0
+    var material: String = ""
     
     
     
@@ -28,6 +30,10 @@ class LearnViewController: UIViewController {
     @IBOutlet weak var labelDate: UILabel!
     @IBOutlet weak var labelInfo: UILabel!
     @IBOutlet weak var photoJail: UIImageView!
+    @IBOutlet weak var labelSqft: UILabel!
+    @IBOutlet weak var labelMaterial: UILabel!
+    
+    
     
     
     override func viewDidLoad() {
@@ -42,6 +48,9 @@ class LearnViewController: UIViewController {
         labelCounty.text = county
         labelDate.text = date
         labelInfo.text = info
+        let sqftString = String(sqft) + " sq. ft."
+        labelSqft.text = sqftString
+        labelMaterial.text = material
         
         let displayPhoto: String = photo1 + ".jpg"
         
