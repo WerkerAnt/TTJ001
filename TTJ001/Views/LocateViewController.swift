@@ -25,16 +25,16 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var sliderZoom: UISlider!
     @IBOutlet weak var labelLocalDetail: UILabel!
-    
+    @IBOutlet weak var pickerTown: UIPickerView!
     @IBOutlet weak var btnTest: UIButton!
     
-    @IBOutlet weak var pickerTown: UIPickerView!
     var pickerData = [["Caldwell","East Bernard","Fayetteville","Flatonia"]]
     var listJails = [NSManagedObject]()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         self.pickerTown.delegate = self
         self.pickerTown.dataSource = self
         
