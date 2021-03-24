@@ -380,7 +380,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cYz-qy-qay"/>
-                        <color key="backgroundColor" red="1" green="0.96677062920000001" blue="0.74335253540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Locate" image="lasso" catalog="system" id="NBc-D3-V7y"/>
                     <connections>
