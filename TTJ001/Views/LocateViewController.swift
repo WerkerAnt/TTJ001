@@ -108,8 +108,8 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         (self.tabBarController?.viewControllers?[2] as! LearnViewController).material = tempMaterial
         
         (self.tabBarController?.viewControllers?[1] as! PlanViewController).town = tempTown
-        (self.tabBarController?.viewControllers?[1] as! PlanViewController).lat = tempLat
-        (self.tabBarController?.viewControllers?[1] as! PlanViewController).long = tempLong
+        (self.tabBarController?.viewControllers?[1] as! PlanViewController).jailLat = tempLat
+        (self.tabBarController?.viewControllers?[1] as! PlanViewController).jailLong = tempLong
         
         return tempTown
         
@@ -125,12 +125,13 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         
         let jailLat = listJails[locationNum].value(forKey: "lat") as! Double
         let jailLong = listJails[locationNum].value(forKey: "long") as! Double
+        let jailTown = listJails[locationNum].value(forKey: "town") as! String
         
         let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(jailLat, jailLong)
         let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 50000, longitudinalMeters: 50000)
         mapView.region = region
         mapView.mapType = MKMapType.standard
-        addAnnotation(coordinate, title: "The Jail", subtitle: "Texas" )
+        addAnnotation(coordinate, title: jailTown + " Jail", subtitle: "Texas" )
         
         
     }

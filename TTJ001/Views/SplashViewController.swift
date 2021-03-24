@@ -21,7 +21,13 @@ class SplashViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { // Change `2.0` to the desired number of seconds.
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "tabBarController") as! UITabBarController
+                    self.present(newViewController, animated: true, completion: nil)
+        }
+        
+        
     }
     
 //    func isFirstLaunch() -> Bool {

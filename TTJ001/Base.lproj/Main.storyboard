@@ -18,11 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="splash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ugg-Zo-us9">
-                                <rect key="frame" x="-101" y="118" width="616" height="135"/>
+                                <rect key="frame" x="-101" y="91" width="616" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="texasmap.png" translatesAutoresizingMaskIntoConstraints="NO" id="FIb-b6-Z3G">
+                                <rect key="frame" x="10" y="249" width="394" height="371"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxJ-cQ-2Tg">
-                                <rect key="frame" x="169" y="764" width="76" height="30"/>
+                                <rect key="frame" x="169" y="728" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="User Mode"/>
                                 <connections>
@@ -30,17 +34,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7i-FU-hr3">
-                                <rect key="frame" x="150" y="704" width="115" height="30"/>
+                                <rect key="frame" x="150" y="668" width="115" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Data Entry Mode"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="axB-B4-lQd"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="texasmap.png" translatesAutoresizingMaskIntoConstraints="NO" id="FIb-b6-Z3G">
-                                <rect key="frame" x="10" y="297" width="394" height="371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hjX-Uu-qu7"/>
                         <color key="backgroundColor" red="1" green="0.96677062920000001" blue="0.74335253540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -399,7 +399,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="8wE-dr-dyu">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="MPO-Ls-Sib" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" modalPresentationStyle="fullScreen" id="MPO-Ls-Sib" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Umc-lF-EOV"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M4M-94-MEx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
