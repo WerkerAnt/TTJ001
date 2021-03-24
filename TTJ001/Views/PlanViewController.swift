@@ -118,6 +118,9 @@ class PlanViewController: UIViewController, MKMapViewDelegate, CLLocationManager
                     }
                 }
         
+        
+        
+        //SLIDERS and Departure Text Field Properties below
         if sliderCurrentLocation.isOn == true {
             textDeparture.isEnabled = false
         }
@@ -170,7 +173,7 @@ class PlanViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         currentLong = locValue.longitude
         
         mapViewDirections.mapType = MKMapType.standard
-
+        
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let region = MKCoordinateRegion(center: locValue, span: span)
         //mapViewDirections.setRegion(region, animated: true)
