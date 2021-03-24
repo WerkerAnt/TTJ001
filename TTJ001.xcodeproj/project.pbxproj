@@ -29,6 +29,9 @@
 		42A28E21260A7AAC00AC46B2 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A28E20260A7AAC00AC46B2 /* test.jpg */; };
 		42A28E26260A7AB100AC46B2 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A28E25260A7AB100AC46B2 /* splash.jpg */; };
 		42A28E2B260A7B1200AC46B2 /* book.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A28E2A260A7B1200AC46B2 /* book.jpg */; };
+		42A78E33260ACCFB0083467F /* TTJ001.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = 42A78E30260ACCFB0083467F /* TTJ001.sqlite-wal */; };
+		42A78E34260ACCFB0083467F /* TTJ001.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = 42A78E31260ACCFB0083467F /* TTJ001.sqlite-shm */; };
+		42A78E35260ACCFB0083467F /* TTJ001.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 42A78E32260ACCFB0083467F /* TTJ001.sqlite */; };
 		42F936D6260A800800EF9663 /* texasmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 42F936D5260A800800EF9663 /* texasmap.png */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +81,9 @@
 		42A28E20260A7AAC00AC46B2 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		42A28E25260A7AB100AC46B2 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
 		42A28E2A260A7B1200AC46B2 /* book.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book.jpg; sourceTree = "<group>"; };
+		42A78E30260ACCFB0083467F /* TTJ001.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTJ001.sqlite-wal"; sourceTree = "<group>"; };
+		42A78E31260ACCFB0083467F /* TTJ001.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTJ001.sqlite-shm"; sourceTree = "<group>"; };
+		42A78E32260ACCFB0083467F /* TTJ001.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TTJ001.sqlite; sourceTree = "<group>"; };
 		42F936D5260A800800EF9663 /* texasmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texasmap.png; sourceTree = "<group>"; };
 		42F936DC260A8C6100EF9663 /* TTJ001.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TTJ001.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +137,7 @@
 		4256142525DDC7E1001E6750 /* TTJ001 */ = {
 			isa = PBXGroup;
 			children = (
+				42A78E2C260ACC7A0083467F /* CoreData */,
 				42963CCE25FECFFB00F71B50 /* Resources */,
 				42963CC525FEC63400F71B50 /* Views */,
 				4256146325DDCC74001E6750 /* Model */,
@@ -197,6 +204,16 @@
 				42A28DFA260A4DBB00AC46B2 /* atx1.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		42A78E2C260ACC7A0083467F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				42A78E32260ACCFB0083467F /* TTJ001.sqlite */,
+				42A78E31260ACCFB0083467F /* TTJ001.sqlite-shm */,
+				42A78E30260ACCFB0083467F /* TTJ001.sqlite-wal */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		42F936DA260A8C6100EF9663 /* Frameworks */ = {
@@ -310,10 +327,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A78E33260ACCFB0083467F /* TTJ001.sqlite-wal in Resources */,
 				4256143625DDC7E3001E6750 /* LaunchScreen.storyboard in Resources */,
+				42A78E35260ACCFB0083467F /* TTJ001.sqlite in Resources */,
 				4256143325DDC7E3001E6750 /* Assets.xcassets in Resources */,
 				42A28E21260A7AAC00AC46B2 /* test.jpg in Resources */,
 				42A28E0A260A5A9300AC46B2 /* htx1.jpg in Resources */,
+				42A78E34260ACCFB0083467F /* TTJ001.sqlite-shm in Resources */,
 				42A28E2B260A7B1200AC46B2 /* book.jpg in Resources */,
 				42A28E26260A7AB100AC46B2 /* splash.jpg in Resources */,
 				42F936D6260A800800EF9663 /* texasmap.png in Resources */,

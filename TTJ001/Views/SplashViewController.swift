@@ -7,12 +7,9 @@ import CoreData
 
 
 class SplashViewController: UIViewController {
-    @IBOutlet weak var labelTest: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        labelTest.text = String(isFirstLaunch())
         
         //Prints location of SQL Database on Developer Machine
         
@@ -27,15 +24,15 @@ class SplashViewController: UIViewController {
 
     }
     
-    func isFirstLaunch() -> Bool {
-        let hasBeenLaunchedBeforeFlag = "hasBeenLaunchedBeforeFlag"
-        let isFirstLaunch = !UserDefaults.standard.bool(forKey: hasBeenLaunchedBeforeFlag)
-        if (isFirstLaunch) {
-            UserDefaults.standard.set(true, forKey: hasBeenLaunchedBeforeFlag)
-            UserDefaults.standard.synchronize()
-        }
-        return isFirstLaunch
-    }
+//    func isFirstLaunch() -> Bool {
+//        let hasBeenLaunchedBeforeFlag = "hasBeenLaunchedBeforeFlag"
+//        let isFirstLaunch = !UserDefaults.standard.bool(forKey: hasBeenLaunchedBeforeFlag)
+//        if (isFirstLaunch) {
+//            UserDefaults.standard.set(true, forKey: hasBeenLaunchedBeforeFlag)
+//            UserDefaults.standard.synchronize()
+//        }
+//        return isFirstLaunch
+//    }
     
 
     
