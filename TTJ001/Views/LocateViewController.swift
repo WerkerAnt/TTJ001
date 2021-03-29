@@ -34,12 +34,14 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        pickerTown.setValue(UIColor.black, forKey: "textColor")
         self.pickerTown.delegate = self
         self.pickerTown.dataSource = self
         
-        let results = try! managedContext.fetch(fetchRequest)
+        var results = try! managedContext.fetch(fetchRequest)
         
+        //Alphabatizes the List of Towns in UIPickerView
+        results.sort{($0 as AnyObject).town! < ($1 as AnyObject).town!}
         listJails = results as! [NSManagedObject]
         
     }
@@ -61,12 +63,13 @@ class LocateViewController: UIViewController, UIPickerViewDelegate, UIPickerView
        
     
        
-       func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
         return listJails.count
        }
        
        //Data to return for row and component that is being passed in
-       func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         //Pull Data for Selected town from CoreData
         let tempTown = listJails[row].value(forKey: "town") as! String

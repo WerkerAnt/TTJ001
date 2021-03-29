@@ -20,6 +20,7 @@
 		4256144C25DDC7E3001E6750 /* TTJ001UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4256144B25DDC7E3001E6750 /* TTJ001UITests.swift */; };
 		4256147925DDCF1B001E6750 /* Jail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4256147725DDCF1B001E6750 /* Jail+CoreDataClass.swift */; };
 		426F10FF25FEB7BD00284616 /* LocateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426F10FE25FEB7BD00284616 /* LocateViewController.swift */; };
+		4283347F26124467006105B4 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283347E26124467006105B4 /* InfoViewController.swift */; };
 		42963CCA25FEC6E000F71B50 /* JailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42963CC925FEC6E000F71B50 /* JailRow.swift */; };
 		42963CDB25FEF1EE00F71B50 /* JailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42963CDA25FEF1EE00F71B50 /* JailList.swift */; };
 		42A28DFB260A4DBC00AC46B2 /* atx1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A28DFA260A4DBB00AC46B2 /* atx1.jpg */; };
@@ -73,6 +74,7 @@
 		4256144D25DDC7E3001E6750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4256147725DDCF1B001E6750 /* Jail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Jail+CoreDataClass.swift"; path = "../../Jail+CoreDataClass.swift"; sourceTree = "<group>"; };
 		426F10FE25FEB7BD00284616 /* LocateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateViewController.swift; sourceTree = "<group>"; };
+		4283347E26124467006105B4 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		42963CC925FEC6E000F71B50 /* JailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailRow.swift; sourceTree = "<group>"; };
 		42963CDA25FEF1EE00F71B50 /* JailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailList.swift; sourceTree = "<group>"; };
 		42A28DFA260A4DBB00AC46B2 /* atx1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atx1.jpg; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				4256142A25DDC7E1001E6750 /* ViewController.swift */,
 				42A28E0E260A641200AC46B2 /* PlanViewController.swift */,
 				42A28E13260A6D5100AC46B2 /* SplashViewController.swift */,
+				4283347E26124467006105B4 /* InfoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				42A28E14260A6D5100AC46B2 /* SplashViewController.swift in Sources */,
 				4253DC742603F18200DBE4D1 /* LearnViewController.swift in Sources */,
 				4256142725DDC7E1001E6750 /* AppDelegate.swift in Sources */,
+				4283347F26124467006105B4 /* InfoViewController.swift in Sources */,
 				4256143125DDC7E1001E6750 /* TTJ001.xcdatamodeld in Sources */,
 				4256142925DDC7E1001E6750 /* SceneDelegate.swift in Sources */,
 				42963CDB25FEF1EE00F71B50 /* JailList.swift in Sources */,
